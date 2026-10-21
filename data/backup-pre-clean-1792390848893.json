@@ -1,0 +1,530 @@
+{
+  "createdAt": "2026-10-19T06:20:48.893Z",
+  "orders": [
+    {
+      "id": "ord-1792390819201",
+      "orderNumber": "PD-91621",
+      "customerId": "cust-101",
+      "customer": {
+        "name": "Manvendra Test",
+        "phone": "9829012345",
+        "address": "123 Farm View, C-Scheme",
+        "city": "Jaipur",
+        "pincode": "302001"
+      },
+      "items": [
+        {
+          "productId": "prod-cow-milk",
+          "name": "Fresh Cow Milk",
+          "unit": "1 Litre",
+          "unitPrice": 72,
+          "quantity": 2,
+          "totalPrice": 144,
+          "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "subtotal": 144,
+      "discount": 0,
+      "deliveryFee": 35,
+      "total": 179,
+      "deliverySlot": "Morning (6:00 AM - 7:30 AM)",
+      "paymentMethod": "cod",
+      "paymentStatus": "paid",
+      "amountPaid": 179,
+      "remainingBalance": 0,
+      "paymentHistory": [
+        {
+          "id": "pay-1792390828150",
+          "date": "2026-10-19T06:20:28.150Z",
+          "amount": 144,
+          "method": "cod",
+          "note": "Collected cash at morning doorstep delivery",
+          "recordedBy": "Store Administrator"
+        },
+        {
+          "id": "pay-1792390841108",
+          "date": "2026-10-19T06:20:41.108Z",
+          "amount": 35,
+          "method": "cod",
+          "note": "Delivery fee balance cleared",
+          "recordedBy": "Store Administrator"
+        }
+      ],
+      "status": "New Order",
+      "statusHistory": [
+        {
+          "status": "New Order",
+          "timestamp": "2026-10-19T06:20:19.200Z",
+          "note": "Order placed via Cash on Delivery (COD). Payment to be collected upon morning doorstep delivery."
+        },
+        {
+          "status": "New Order",
+          "timestamp": "2026-10-19T06:20:28.150Z",
+          "note": "Recorded payment of ₹144 via COD. Balance: ₹35"
+        },
+        {
+          "status": "New Order",
+          "timestamp": "2026-10-19T06:20:41.108Z",
+          "note": "Recorded payment of ₹35 via COD. Balance: ₹0"
+        }
+      ],
+      "createdAt": "2026-10-19T06:20:19.200Z",
+      "updatedAt": "2026-10-19T06:20:41.108Z",
+      "paymentDate": "2026-10-19T06:20:41.108Z"
+    },
+    {
+      "id": "ord-1792138066930",
+      "orderNumber": "PD-21945",
+      "customerId": "cust-1792138046160",
+      "customer": {
+        "name": "testing",
+        "phone": "1234567890",
+        "email": "test@gmail.comm",
+        "address": "xyzqwertyuiolokjdsba",
+        "city": "Jaipur",
+        "pincode": "302001",
+        "deliveryNotes": ""
+      },
+      "items": [
+        {
+          "productId": "prod-cow-milk",
+          "variantId": "v1",
+          "name": "Fresh Cow Milk",
+          "variantName": "500 ml Bottle",
+          "unit": "500 ml",
+          "unitPrice": 39,
+          "quantity": 1,
+          "totalPrice": 39,
+          "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "productId": "prod-buffalo-milk",
+          "variantId": "bv1",
+          "name": "Full Cream Buffalo Milk",
+          "variantName": "500 ml Bottle",
+          "unit": "500 ml",
+          "unitPrice": 45,
+          "quantity": 1,
+          "totalPrice": 45,
+          "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "productId": "prod-a2-milk",
+          "variantId": "a2v1",
+          "name": "A2 Gir Cow Desi Milk",
+          "variantName": "1 Litre Bottle",
+          "unit": "1 Litre",
+          "unitPrice": 105,
+          "quantity": 1,
+          "totalPrice": 105,
+          "image": "https://images.unsplash.com/photo-1527153857715-3908f2ae5e81?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "subtotal": 189,
+      "discount": 0,
+      "deliveryFee": 35,
+      "total": 224,
+      "deliverySlot": "Morning (5:30 AM - 7:30 AM)",
+      "paymentMethod": "upi",
+      "paymentStatus": "paid",
+      "upiVerificationStatus": "pending",
+      "amountPaid": 224,
+      "remainingBalance": 0,
+      "paymentHistory": [
+        {
+          "id": "pay-1792138666914",
+          "date": "2026-10-16T08:17:46.914Z",
+          "amount": 224,
+          "method": "upi",
+          "recordedBy": "Store Administrator"
+        }
+      ],
+      "status": "New Order",
+      "statusHistory": [
+        {
+          "status": "New Order",
+          "timestamp": "2026-10-16T08:07:46.930Z",
+          "note": "Order placed via UPI"
+        },
+        {
+          "status": "New Order",
+          "timestamp": "2026-10-16T08:17:46.914Z",
+          "note": "Recorded payment of ₹224 via UPI. Balance: ₹0"
+        }
+      ],
+      "createdAt": "2026-10-16T08:07:46.930Z",
+      "updatedAt": "2026-10-16T08:17:46.914Z",
+      "paymentDate": "2026-10-16T08:17:46.914Z"
+    },
+    {
+      "id": "ord-1792050045498",
+      "orderNumber": "PD-56730",
+      "customer": {
+        "name": "m",
+        "phone": "1234567890",
+        "email": "test@gmail.com",
+        "address": "bb",
+        "city": "Jaipur, Rajasthan",
+        "pincode": "302001",
+        "deliveryNotes": ""
+      },
+      "items": [
+        {
+          "productId": "prod-buffalo-milk",
+          "variantId": "bv1",
+          "name": "Full Cream Buffalo Milk",
+          "variantName": "500 ml Bottle",
+          "unit": "500 ml",
+          "unitPrice": 45,
+          "quantity": 1,
+          "totalPrice": 45,
+          "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "productId": "prod-ghee",
+          "variantId": "gv1",
+          "name": "Traditional Bilona Cow Ghee",
+          "variantName": "500 ml Glass Jar",
+          "unit": "500 ml",
+          "unitPrice": 650,
+          "quantity": 1,
+          "totalPrice": 650,
+          "image": "https://images.unsplash.com/photo-1631452180539-96aca7d48617?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "subtotal": 695,
+      "discount": 0,
+      "deliveryFee": 0,
+      "total": 695,
+      "deliverySlot": "Evening (5:00 PM - 7:00 PM)",
+      "paymentMethod": "upi",
+      "paymentStatus": "paid",
+      "status": "Cancelled",
+      "statusHistory": [
+        {
+          "status": "New Order",
+          "timestamp": "2026-10-15T07:40:45.498Z",
+          "note": "Order placed via UPI"
+        },
+        {
+          "status": "Cancelled",
+          "timestamp": "2026-10-15T07:41:46.707Z",
+          "note": "Status updated to Cancelled"
+        },
+        {
+          "status": "Cancelled",
+          "timestamp": "2026-10-15T07:41:47.571Z",
+          "note": "Status updated to Cancelled"
+        },
+        {
+          "status": "Cancelled",
+          "timestamp": "2026-10-15T07:41:47.720Z",
+          "note": "Status updated to Cancelled"
+        },
+        {
+          "status": "Cancelled",
+          "timestamp": "2026-10-15T07:41:47.945Z",
+          "note": "Status updated to Cancelled"
+        }
+      ],
+      "createdAt": "2026-10-15T07:40:45.498Z",
+      "updatedAt": "2026-10-15T07:41:47.945Z",
+      "amountPaid": 695,
+      "remainingBalance": 0,
+      "paymentHistory": [],
+      "customerId": "cust-1792138046160"
+    },
+    {
+      "id": "ord-1792047955578",
+      "orderNumber": "PD-87368",
+      "customer": {
+        "name": "Vikram Malhotra",
+        "phone": "9829012345",
+        "email": "",
+        "address": "Plot 88, Sunrise Enclave, Tonk Road",
+        "city": "Jaipur, Rajasthan",
+        "pincode": "302001",
+        "deliveryNotes": ""
+      },
+      "items": [
+        {
+          "productId": "prod-combo-breakfast",
+          "name": "PureDrop Morning Essentials Combo",
+          "unit": "1 Family Bundle",
+          "unitPrice": 340,
+          "quantity": 1,
+          "totalPrice": 340,
+          "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "subtotal": 340,
+      "discount": 34,
+      "couponCode": "FRESH10",
+      "deliveryFee": 35,
+      "total": 341,
+      "deliverySlot": "Morning (5:30 AM - 7:30 AM)",
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "status": "Out for Delivery",
+      "statusHistory": [
+        {
+          "status": "New Order",
+          "timestamp": "2026-10-15T07:05:55.578Z",
+          "note": "Order placed via COD"
+        },
+        {
+          "status": "Confirmed",
+          "timestamp": "2026-10-15T07:41:57.581Z",
+          "note": "Status updated to Confirmed"
+        },
+        {
+          "status": "Preparing",
+          "timestamp": "2026-10-15T07:57:36.948Z",
+          "note": "Status updated to Preparing"
+        },
+        {
+          "status": "Out for Delivery",
+          "timestamp": "2026-10-15T09:30:11.756Z",
+          "note": "Status updated to Out for Delivery"
+        }
+      ],
+      "createdAt": "2026-10-15T07:05:55.578Z",
+      "updatedAt": "2026-10-15T09:30:11.756Z",
+      "amountPaid": 0,
+      "remainingBalance": 341,
+      "paymentHistory": [],
+      "customerId": "cust-101"
+    },
+    {
+      "id": "ord-101",
+      "orderNumber": "PD-89201",
+      "customer": {
+        "name": "Aditi Sharma",
+        "phone": "9829012345",
+        "email": "aditi.sharma@example.com",
+        "address": "Flat 402, Sunshine Residency, Vaishali Nagar",
+        "city": "Jaipur",
+        "pincode": "302021",
+        "deliveryNotes": "Please ring bell and leave in milk cooler box outside."
+      },
+      "items": [
+        {
+          "productId": "prod-cow-milk",
+          "name": "Fresh Cow Milk",
+          "variantName": "1 Litre Bottle",
+          "unit": "1 Litre",
+          "unitPrice": 72,
+          "quantity": 2,
+          "totalPrice": 144,
+          "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": "prod-paneer",
+          "name": "Farm Fresh Malai Paneer",
+          "variantName": "200 g Block",
+          "unit": "200 g",
+          "unitPrice": 115,
+          "quantity": 1,
+          "totalPrice": 115,
+          "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=400&q=80"
+        }
+      ],
+      "subtotal": 259,
+      "discount": 0,
+      "deliveryFee": 35,
+      "total": 294,
+      "deliverySlot": "Morning (5:30 AM - 7:30 AM)",
+      "paymentMethod": "upi",
+      "paymentStatus": "paid",
+      "status": "Out for Delivery",
+      "statusHistory": [
+        {
+          "status": "New Order",
+          "timestamp": "2026-10-14T19:30:00.000Z",
+          "note": "Order placed by customer via UPI"
+        },
+        {
+          "status": "Confirmed",
+          "timestamp": "2026-10-14T20:00:00.000Z",
+          "note": "Payment verified & order confirmed"
+        },
+        {
+          "status": "Preparing",
+          "timestamp": "2026-10-15T04:30:00.000Z",
+          "note": "Packed with ice pack in dairy insulated tote"
+        },
+        {
+          "status": "Out for Delivery",
+          "timestamp": "2026-10-15T05:45:00.000Z",
+          "note": "Route assigned to Delivery Runner Rajesh"
+        }
+      ],
+      "internalNotes": "Regular subscriber request",
+      "createdAt": "2026-10-14T19:30:00.000Z",
+      "updatedAt": "2026-10-15T05:45:00.000Z",
+      "amountPaid": 294,
+      "remainingBalance": 0,
+      "paymentHistory": [],
+      "customerId": "cust-101"
+    },
+    {
+      "id": "ord-102",
+      "orderNumber": "PD-89202",
+      "customer": {
+        "name": "Vikram Mehta",
+        "phone": "9876543210",
+        "email": "vikram.m@example.com",
+        "address": "B-12, Civil Lines, Near Railway Club",
+        "city": "Jaipur",
+        "pincode": "302006"
+      },
+      "items": [
+        {
+          "productId": "prod-ghee",
+          "name": "Traditional Bilona Cow Ghee",
+          "variantName": "500 ml Glass Jar",
+          "unit": "500 ml",
+          "unitPrice": 650,
+          "quantity": 1,
+          "totalPrice": 650,
+          "image": "https://images.unsplash.com/photo-1631452180539-96aca7d48617?auto=format&fit=crop&w=400&q=80"
+        }
+      ],
+      "subtotal": 650,
+      "discount": 50,
+      "couponCode": "PUREDROP50",
+      "deliveryFee": 0,
+      "total": 600,
+      "deliverySlot": "Morning (5:30 AM - 7:30 AM)",
+      "paymentMethod": "cod",
+      "paymentStatus": "paid",
+      "status": "Preparing",
+      "statusHistory": [
+        {
+          "status": "New Order",
+          "timestamp": "2026-10-14T21:15:00.000Z",
+          "note": "Order placed via Cash on Delivery"
+        },
+        {
+          "status": "Confirmed",
+          "timestamp": "2026-10-14T21:20:00.000Z",
+          "note": "Customer phone confirmed"
+        },
+        {
+          "status": "Preparing",
+          "timestamp": "2026-10-15T05:00:00.000Z",
+          "note": "Bilona ghee jar verified seal & packaged"
+        },
+        {
+          "status": "Preparing",
+          "timestamp": "2026-10-15T09:58:04.387Z",
+          "note": "Recorded payment of ₹200 via COD (Ref: CASH-SLIP-89202). Balance: ₹400"
+        },
+        {
+          "status": "Preparing",
+          "timestamp": "2026-10-15T09:58:13.061Z",
+          "note": "Recorded payment of ₹400 via COD (Ref: CASH-SLIP-89202-FINAL). Balance: ₹0"
+        }
+      ],
+      "internalNotes": "Collect cash ₹600 upon doorstep delivery",
+      "createdAt": "2026-10-14T21:15:00.000Z",
+      "updatedAt": "2026-10-15T09:58:13.061Z",
+      "amountPaid": 600,
+      "remainingBalance": 0,
+      "paymentHistory": [
+        {
+          "id": "pay-1792058284387",
+          "date": "2026-10-15T09:58:04.387Z",
+          "amount": 200,
+          "method": "cod",
+          "reference": "CASH-SLIP-89202",
+          "note": "Morning delivery runner collected cash",
+          "recordedBy": "Store Administrator"
+        },
+        {
+          "id": "pay-1792058293061",
+          "date": "2026-10-15T09:58:13.061Z",
+          "amount": 400,
+          "method": "cod",
+          "reference": "CASH-SLIP-89202-FINAL",
+          "note": "Evening balance collected",
+          "recordedBy": "Store Administrator"
+        }
+      ],
+      "transactionId": "CASH-SLIP-89202-FINAL",
+      "paymentDate": "2026-10-15T09:58:13.061Z",
+      "customerId": "cust-102"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-101",
+      "name": "Aditi Sharma",
+      "email": "aditi.sharma@example.com",
+      "phone": "9829012345",
+      "alternatePhone": "9829099999",
+      "passwordHash": "d747abda16d65c91ce5cf86cdf84c9ac962e40d96e7602178692807e0a81cbe8",
+      "savedAddresses": [
+        {
+          "id": "addr-1",
+          "label": "Home",
+          "address": "Flat 402, Sunshine Residency, Vaishali Nagar",
+          "city": "Jaipur",
+          "pincode": "302021",
+          "isDefault": true
+        },
+        {
+          "id": "addr-1792390819201",
+          "label": "Address 2",
+          "address": "123 Farm View, C-Scheme",
+          "city": "Jaipur",
+          "pincode": "302001",
+          "isDefault": false
+        }
+      ],
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-01T08:00:00.000Z"
+    },
+    {
+      "id": "cust-102",
+      "name": "Vikram Mehta",
+      "email": "vikram.m@example.com",
+      "phone": "9876543210",
+      "passwordHash": "d747abda16d65c91ce5cf86cdf84c9ac962e40d96e7602178692807e0a81cbe8",
+      "savedAddresses": [
+        {
+          "id": "addr-2",
+          "label": "Home",
+          "address": "B-12, Civil Lines, Near Railway Club",
+          "city": "Jaipur",
+          "pincode": "302006",
+          "isDefault": true
+        }
+      ],
+      "createdAt": "2026-10-02T09:30:00.000Z",
+      "updatedAt": "2026-10-02T09:30:00.000Z"
+    },
+    {
+      "id": "cust-1792138046160",
+      "name": "testing",
+      "email": "test@gmail.comm",
+      "phone": "1234567890",
+      "passwordHash": "a00f9c4c9239b7f4bde549b5105ca2fab20bccbaa513be8e64a399b8d022ff91",
+      "savedAddresses": [
+        {
+          "id": "addr-1792138046160",
+          "label": "Home",
+          "address": "xyzqwertyuiolokjdsba",
+          "city": "Jaipur",
+          "pincode": "302001",
+          "isDefault": true
+        }
+      ],
+      "createdAt": "2026-10-16T08:07:26.160Z",
+      "updatedAt": "2026-10-16T08:07:26.160Z"
+    }
+  ],
+  "customerNotes": {
+    "9876543210": "Prefers fresh morning delivery by 6:00 AM."
+  }
+}

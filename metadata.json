@@ -1,0 +1,6 @@
+{
+  "name": "PureDrop Dairy - Farm-Fresh Milk & Artisanal Dairy E-Commerce",
+  "description": "PureDrop Dairy delivers fresh, unadulterated cow & buffalo milk, pure desi ghee, paneer, curd, and artisanal dairy products straight from farm to doorstep with full management dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

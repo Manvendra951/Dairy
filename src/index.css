@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    
+    /* Fresh Organic Dairy & Green Palette (Banas Dairy Inspired) */
+    --color-bg-ivory: #FAFCF7;
+    --color-surface-white: #FFFFFF;
+    --color-light-green: #EAF4E5;
+    --color-sage-green: #DCE9D5;
+    --color-primary-green: #397548;
+    --color-primary-green-dark: #2E5E3A;
+    --color-text-dark: #26352B;
+    --color-text-muted: #69766B;
+    --color-cream-light: #F8F5EA;
+    --color-accent-gold: #F59E0B;
+    --color-border-subtle: #E2ECE0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAFCF7;
+    color: #26352B;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif-accent {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Tasteful light organic scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F7EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8DDC3;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #397548;
+}
+
+/* Tasteful dairy farm cow & UI animations */
+@keyframes cow-walk-1 {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes cow-walk-2 {
+  0%, 100% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes cow-tail {
+  0%, 100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+}
+
+@keyframes cow-head {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(1.5px) rotate(1deg);
+  }
+}
+
+@keyframes cow-chew {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(1px) translateY(0.5px);
+  }
+  75% {
+    transform: translateX(-1px) translateY(0.5px);
+  }
+}
+
+@keyframes cow-bell {
+  0%, 100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes milk-drop {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes grass-breeze {
+  0%, 100% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(3deg);
+  }
+}
+
+@keyframes cart-pop {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.22);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-cow-leg-1 {
+  animation: cow-walk-1 1.6s ease-in-out infinite;
+  transform-origin: 35% 55%;
+}
+
+.animate-cow-leg-2 {
+  animation: cow-walk-2 1.6s ease-in-out infinite;
+  transform-origin: 65% 55%;
+}
+
+.animate-cow-tail {
+  animation: cow-tail 2.2s ease-in-out infinite;
+  transform-origin: 18% 42%;
+}
+
+.animate-cow-head {
+  animation: cow-head 3s ease-in-out infinite;
+  transform-origin: 75% 45%;
+}
+
+.animate-cow-chew {
+  animation: cow-chew 1.8s ease-in-out infinite;
+}
+
+.animate-cow-bell {
+  animation: cow-bell 2s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+.animate-milk-drop {
+  animation: milk-drop 2.5s ease-in-out infinite;
+}
+
+.animate-grass {
+  animation: grass-breeze 3s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-cart-pop {
+  animation: cart-pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Reduced-motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-cow-leg-1,
+  .animate-cow-leg-2,
+  .animate-cow-tail,
+  .animate-cow-head,
+  .animate-cow-chew,
+  .animate-cow-bell,
+  .animate-milk-drop,
+  .animate-grass,
+  .animate-cart-pop {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-receipt, #printable-receipt * {
+    visibility: visible;
+  }
+  #printable-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 16px;
+  }
+}
